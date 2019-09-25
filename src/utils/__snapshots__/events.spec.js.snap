@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Events util should filter properly 1`] = `
+Array [
+  Object {
+    "id": "123",
+    "properties": Object {
+      "maagType": "foo",
+      "mag": "1",
+      "place": "foo",
+    },
+  },
+  Object {
+    "id": "111",
+    "properties": Object {
+      "maagType": "qwe",
+      "mag": "999",
+      "place": "foo",
+    },
+  },
+]
+`;
