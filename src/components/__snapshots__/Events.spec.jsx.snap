@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Events Component should render properly - if no events 1`] = `
+<Events
+  events={Array []}
+>
+  <div>
+    Not found!
+  </div>
+</Events>
+`;
+
+exports[`Events Component should render properly - with filters 1`] = `
+<Events
+  events={
+    Array [
+      Object {
+        "id": "123",
+        "properties": Object {
+          "maagType": "foo",
+          "mag": "1",
+          "place": "iAmAPlace",
+        },
+      },
+      Object {
+        "id": "321",
+        "properties": Object {
+          "maagType": "bar",
+          "mag": "01",
+          "place": "foobar",
+        },
+      },
+    ]
+  }
+>
+  <table
+    style={
+      Object {
+        "border": "1px solid rgb(239, 239, 239)",
+      }
+    }
+  >
+    <tbody>
+      <tr
+        key="321"
+      >
+        <td>
+          321
+        </td>
+        <td>
+          foobar
+        </td>
+        <td>
+          01
+        </td>
+        <td />
+      </tr>
+    </tbody>
+  </table>
+</Events>
+`;
+
+exports[`Events Component should render properly 1`] = `
+<Events
+  events={
+    Array [
+      Object {
+        "id": "123",
+        "properties": Object {
+          "maagType": "foo",
+          "mag": "1",
+          "place": "iAmAPlace",
+        },
+      },
+      Object {
+        "id": "321",
+        "properties": Object {
+          "maagType": "bar",
+          "mag": "01",
+          "place": "foobar",
+        },
+      },
+    ]
+  }
+>
+  <table
+    style={
+      Object {
+        "border": "1px solid rgb(239, 239, 239)",
+      }
+    }
+  >
+    <tbody>
+      <tr
+        key="123"
+      >
+        <td>
+          123
+        </td>
+        <td>
+          iAmAPlace
+        </td>
+        <td>
+          1
+        </td>
+        <td />
+      </tr>
+      <tr
+        key="321"
+      >
+        <td>
+          321
+        </td>
+        <td>
+          foobar
+        </td>
+        <td>
+          01
+        </td>
+        <td />
+      </tr>
+    </tbody>
+  </table>
+</Events>
+`;

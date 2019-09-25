@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
-const Filter = ({ name, setFilter, filter }) => {
+import { setFilter, getCurrentFilterName } from 'reducers/filter';
+
+const Filter = ({ name }) => {
+  const dispatch = useDispatch();
+  const filterSelected = useSelector(getCurrentFilterName);
   const [value, setValue] = useState('');
   useEffect(() => {
-    filter.name !== name && setValue('');
-  }, [filter.name, name]);
+    filterSelected !== name && setValue('');
+  }, [filterSelected, name]);
   return (
     <form
       onSubmit={e => {
         e.preventDefault();
-        setFilter({ name, value });
+        dispatch(setFilter({ name, value }));
       }}
     >
       <input
@@ -28,6 +33,4 @@ export default Filter;
 
 Filter.propTypes = {
   name: PropTypes.string.isRequired,
-  setFilter: PropTypes.func.isRequired,
-  filter: PropTypes.shape({ name: PropTypes.string }).isRequired,
 };

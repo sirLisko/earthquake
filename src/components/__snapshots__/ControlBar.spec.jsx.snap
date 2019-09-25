@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ControlBar Component should render properly 1`] = `
+<div>
+  <Filter
+    name="mag"
+  />
+  <Filter
+    name="magType"
+  />
+  <ClearFilter />
+</div>
+`;

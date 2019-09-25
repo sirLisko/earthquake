@@ -1,11 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+
 import 'styles/index.css';
+
+import { store } from './store';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 const render = Component => {
-  ReactDOM.render(<Component />, document.getElementById('root'));
+  ReactDOM.render(
+    <Provider store={store}>
+      <Component />
+    </Provider>,
+    document.getElementById('root'),
+  );
 };
 
 render(App);

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter Component should render properly 1`] = `
+<Filter
+  name="foo"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="set foo"
+      type="text"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      set
+    </button>
+  </form>
+</Filter>
+`;

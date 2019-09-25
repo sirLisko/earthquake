@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClearFilter Component should render properly 1`] = `
+<ClearFilter>
+  <button
+    onClick={[Function]}
+    type="submit"
+  >
+    clear filter
+  </button>
+</ClearFilter>
+`;

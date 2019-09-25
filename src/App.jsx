@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
+
 import { getEvents } from 'utils/earthquakeAPI';
 
-import Filter from 'components/Filter';
+import ControlBar from 'components/ControlBar';
 import Events from 'components/Events';
 
 function App() {
   const [events, setEvents] = useState();
-  const [filter, setFilter] = useState({});
   const [error, setError] = useState();
+
   useEffect(() => {
     async function fetchEvents() {
       try {
@@ -21,12 +22,6 @@ function App() {
     fetchEvents();
   }, []);
 
-  const filteredEvents = filter.value
-    ? events.filter(
-        event => event.properties[filter.name].toString() === filter.value,
-      )
-    : events;
-
   if (!events) {
     return <div>Loading...</div>;
   }
@@ -36,12 +31,8 @@ function App() {
 
   return (
     <div>
-      <Filter name="mag" setFilter={setFilter} filter={filter} />
-      <Filter name="magType" setFilter={setFilter} filter={filter} />
-      <button onClick={() => setFilter({})} type="submit">
-        clear filter
-      </button>
-      <Events events={filteredEvents} />
+      <ControlBar />
+      <Events events={events} />
     </div>
   );
 }
