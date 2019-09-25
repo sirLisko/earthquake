@@ -33,30 +33,44 @@ exports[`Events Component should render properly - with filters 1`] = `
     ]
   }
 >
-  <table
-    style={
-      Object {
-        "border": "1px solid rgb(239, 239, 239)",
-      }
-    }
-  >
-    <tbody>
-      <tr
-        key="321"
-      >
-        <td>
-          321
-        </td>
-        <td>
-          foobar
-        </td>
-        <td>
-          01
-        </td>
-        <td />
-      </tr>
-    </tbody>
-  </table>
+  <StyledTable>
+    <table
+      className="css-14kxgak-StyledTable e1oqn710"
+    >
+      <thead>
+        <tr>
+          <th>
+            Id
+          </th>
+          <th>
+            Place
+          </th>
+          <th>
+            Mag
+          </th>
+          <th>
+            MagType
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          key="321"
+        >
+          <td>
+            321
+          </td>
+          <td>
+            foobar
+          </td>
+          <td>
+            01
+          </td>
+          <td />
+        </tr>
+      </tbody>
+    </table>
+  </StyledTable>
 </Events>
 `;
 
@@ -83,43 +97,57 @@ exports[`Events Component should render properly 1`] = `
     ]
   }
 >
-  <table
-    style={
-      Object {
-        "border": "1px solid rgb(239, 239, 239)",
-      }
-    }
-  >
-    <tbody>
-      <tr
-        key="123"
-      >
-        <td>
-          123
-        </td>
-        <td>
-          iAmAPlace
-        </td>
-        <td>
-          1
-        </td>
-        <td />
-      </tr>
-      <tr
-        key="321"
-      >
-        <td>
-          321
-        </td>
-        <td>
-          foobar
-        </td>
-        <td>
-          01
-        </td>
-        <td />
-      </tr>
-    </tbody>
-  </table>
+  <StyledTable>
+    <table
+      className="css-14kxgak-StyledTable e1oqn710"
+    >
+      <thead>
+        <tr>
+          <th>
+            Id
+          </th>
+          <th>
+            Place
+          </th>
+          <th>
+            Mag
+          </th>
+          <th>
+            MagType
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          key="123"
+        >
+          <td>
+            123
+          </td>
+          <td>
+            iAmAPlace
+          </td>
+          <td>
+            1
+          </td>
+          <td />
+        </tr>
+        <tr
+          key="321"
+        >
+          <td>
+            321
+          </td>
+          <td>
+            foobar
+          </td>
+          <td>
+            01
+          </td>
+          <td />
+        </tr>
+      </tbody>
+    </table>
+  </StyledTable>
 </Events>
 `;

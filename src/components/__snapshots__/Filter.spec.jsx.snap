@@ -7,17 +7,30 @@ exports[`Filter Component should render properly 1`] = `
   <form
     onSubmit={[Function]}
   >
-    <input
+    <StyledInput
       onChange={[Function]}
       placeholder="set foo"
       type="text"
       value=""
-    />
-    <button
+    >
+      <input
+        className="css-k5oqm0-StyledInput ei529xs0"
+        onChange={[Function]}
+        placeholder="set foo"
+        type="text"
+        value=""
+      />
+    </StyledInput>
+    <StyledButton
       type="submit"
     >
-      set
-    </button>
+      <button
+        className="css-1a38x1d-StyledButton enac65f0"
+        type="submit"
+      >
+        set
+      </button>
+    </StyledButton>
   </form>
 </Filter>
 `;

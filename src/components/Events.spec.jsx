@@ -33,7 +33,7 @@ describe('Events Component', () => {
 
   it('should render properly', () => {
     expect(wrapper.find('Events')).toMatchSnapshot();
-    expect(wrapper.find('tr').length).toBe(2);
+    expect(wrapper.find('tbody tr').length).toBe(2);
   });
 
   it('should render properly - if no events', () => {
@@ -43,7 +43,7 @@ describe('Events Component', () => {
       </Provider>,
     );
     expect(wrapper.find('Events')).toMatchSnapshot();
-    expect(wrapper.find('tr').length).toBe(0);
+    expect(wrapper.find('tbody tr').length).toBe(0);
   });
 
   it('should render properly - with filters', () => {
@@ -56,6 +56,6 @@ describe('Events Component', () => {
       </Provider>,
     );
     expect(wrapper.find('Events')).toMatchSnapshot();
-    expect(wrapper.find('tr').length).toBe(1);
+    expect(wrapper.find('tbody tr').length).toBe(1);
   });
 });

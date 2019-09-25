@@ -2,11 +2,17 @@
 
 exports[`ClearFilter Component should render properly 1`] = `
 <ClearFilter>
-  <button
+  <StyledButton
     onClick={[Function]}
     type="submit"
   >
-    clear filter
-  </button>
+    <button
+      className="css-1a38x1d-StyledButton enac65f0"
+      onClick={[Function]}
+      type="submit"
+    >
+      clear filter
+    </button>
+  </StyledButton>
 </ClearFilter>
 `;

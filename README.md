@@ -16,11 +16,13 @@ I also gave a try to the new fancy [Github Actions](https://github.com/features/
 - Unit tests with [Jest](https://jestjs.io) and [Enzyme](https://airbnb.io/enzyme/)
 - Integration test with [Cypress](https://cypress.io)
 - CI using [Github Actions](https://github.com/features/actions)
+- Style components with [Emotion](https://emotion.sh) using Macros
 - Hosted on [Netlify](https://netlify.com)
 
 ### Improvements
 
 - Polishing the UI
+- Improve mobile experience
 - Improve Unit Tests
 - Validate input fields
 - Use some fixtures for E2E tests
