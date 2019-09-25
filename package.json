@@ -20,17 +20,14 @@
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.1",
     "jest-fetch-mock": "^2.1.2",
-    "prettier": "^1.18.2",
-    "start-server-and-test": "^1.10.2"
+    "prettier": "^1.18.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint src --ext .jsx,.js",
     "unit": "react-scripts test",
-    "integration": "start-server-and-test start http://localhost:3000 cy:run",
-    "test": "npm run lint && npm run unit && npm run integration",
-    "cy:run": "cypress run",
+    "test": "npm run lint && npm run unit",
     "eject": "react-scripts eject"
   },
   "browserslist": {

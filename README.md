@@ -15,3 +15,8 @@
 - Validate input fields
 - Use some fixtures for E2E tests
 - Probably I am forgetting a bunch of them :-)
+
+### Note
+
+There is a problem related to running Cypress using `cypress run`, it might be related to https://github.com/cypress-io/cypress/issues/2069.
+For the moment, in order to run the integration tests, run `cypress open` and then _run all specs_
