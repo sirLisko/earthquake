@@ -1,4 +1,4 @@
-# Earthquake [![Netlify Status](https://api.netlify.com/api/v1/badges/5019cd6e-3d34-49b9-ad10-9198ac2b8c07/deploy-status)](https://app.netlify.com/sites/earthquake-events/deploys)
+# Earthquake [![Test Status][test-image]][test-url] [![Build Status][build-image]][build-url]
 
 [https://earthquake-events.netlify.com](https://earthquake-events.netlify.com)
 
@@ -29,3 +29,8 @@ I also gave a try to the new fancy [Github Actions](https://github.com/features/
 - Validate input fields
 - Use some fixtures for E2E tests
 - Probably I am forgetting a bunch of them :-)
+
+[test-image]: https://github.com/sirlisko/earthquake/workflows/Test%20CI/badge.svg
+[test-url]: https://github.com/sirLisko/earthquake/actions
+[build-image]: https://api.netlify.com/api/v1/badges/5019cd6e-3d34-49b9-ad10-9198ac2b8c07/deploy-status
+[build-url]: https://app.netlify.com/sites/earthquake-events/deploys
