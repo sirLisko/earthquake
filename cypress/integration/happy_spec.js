@@ -9,7 +9,7 @@ describe('The Web App', function() {
     cy.get('form')
       .first()
       .submit();
-    cy.get('tr')
+    cy.get('tbody tr')
       .first()
       .contains('1.1');
   });
@@ -26,7 +26,7 @@ describe('The Web App', function() {
       .submit();
     cy.contains('Not found!');
 
-    cy.get('div > :nth-child(3)').click();
+    cy.get('div > button:nth-child(3)').click();
     cy.get('table');
   });
 });
