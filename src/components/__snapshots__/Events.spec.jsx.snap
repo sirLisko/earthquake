@@ -58,7 +58,9 @@ exports[`Events Component should render properly - with filters 1`] = `
           key="321"
         >
           <td>
-            321
+            <span>
+              321
+            </span>
           </td>
           <td>
             foobar
@@ -122,7 +124,9 @@ exports[`Events Component should render properly 1`] = `
           key="123"
         >
           <td>
-            123
+            <span>
+              123
+            </span>
           </td>
           <td>
             iAmAPlace
@@ -136,7 +140,9 @@ exports[`Events Component should render properly 1`] = `
           key="321"
         >
           <td>
-            321
+            <span>
+              321
+            </span>
           </td>
           <td>
             foobar

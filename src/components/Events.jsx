@@ -46,7 +46,9 @@ const Events = ({ events }) => {
       <tbody>
         {filteredEvents.map(({ id, properties: { mag, place, magType } }) => (
           <tr key={id}>
-            <td>{id}</td>
+            <td>
+              <span>{id}</span>
+            </td>
             <td>{place}</td>
             <td>{mag}</td>
             <td>{magType}</td>
